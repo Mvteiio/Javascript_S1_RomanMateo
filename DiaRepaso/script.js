@@ -5,7 +5,7 @@ function fetchPoke() {
     
     function buscarPokemon() {
         realizarLlamadaAPI(numeroPokemon);
-        miInput.value = numeroPokemon; // Actualiza el input
+        miInput.value = numeroPokemon; 
     }
     
     // Evento para el botón Anterior

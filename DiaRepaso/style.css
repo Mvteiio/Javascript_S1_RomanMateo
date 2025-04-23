@@ -56,9 +56,12 @@ h1 {
     top: 27em;
     left: 3.5em;
     background-color: #FFFFFF;
+    border-radius: 7px;
+    box-shadow: -3px 4px rgb(140, 140, 140);
 }
 
 #btnAnterior {
+    border-radius: 7px;
     position: absolute;
     border: 2px solid black;
     top: 22.5em;
@@ -69,13 +72,16 @@ h1 {
     color: #FFFFFF;
     font-family: 'Oxanium', cursive;
     font-size: 1.5em;
+    box-shadow: -3px 3px black;
 }
 
 #btnAnterior:hover {
-    background-color: #333030;
+    background-color: #545151;
+    box-shadow: 3px -3px black;
 }
 
 #btnSiguiente {
+    border-radius: 7px;
     position: absolute;
     border: 2px solid black;
     top: 22.5em;
@@ -86,8 +92,10 @@ h1 {
     color: #FFFFFF;
     font-family: 'Oxanium', cursive;
     font-size: 1.5em;
+    box-shadow: -3px 3px black;
 }
 
 #btnSiguiente:hover {
-    background-color: #333030;
+    background-color: #545151;
+    box-shadow: 3px -3px black;
 }
