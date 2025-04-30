@@ -1,0 +1,22 @@
+.todo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+    margin-left: 20%;
+    text-align: center;
+
+}
+
+#codigoInput {
+    font-size: 1.5em;
+    width: 30%;
+}
+
+#imagen {
+    width: 50%;
+}
