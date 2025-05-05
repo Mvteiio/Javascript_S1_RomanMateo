@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <div>
-        <button onclick="obtenerDatos()">Ver usuarios</button>
-        <button>Agregar un usuario</button>
-        <button>Eliminar usuario</button>
-        <button>Actualizar Usuario</button>
+        <input type="text" name="" id="buscador">
+    </div>
+
+    <div id="main">
+        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="" id="avatar">
+        <div class="texto">
+            <h1 id="nombre">Nombre</h1>
+            <h3 id="descripcion">Descripcion</h3>
+        </div>
+    </div>
+
+    <div id="nuevosUsuarios">
+
     </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="./script/script.js" defer></script>
+<script src="./script/script.js"></script>
 </html>
