@@ -12,12 +12,32 @@ function ponerUsuarios(data) {
     // Limpiar el contenedor cada vez que se inicie la funcion 
     nuevasTareas.innerHTML = '';
 
-    data.forEach(tarea=> {
-        const nuevaTarea = template.cloneNode(true);
-        nuevaTarea.style.display = "flex";
-        nuevaTarea.querySelector("#nombreTarea").textContent = tarea["task"];
-        nuevasTareas.appendChild(nuevaTarea);
+    data.forEach(tarea => {
+        if (tarea["status"] === "On hold") {
+            const nuevaTarea = template.cloneNode(true);
+            nuevaTarea.style.display = "flex";
+            nuevaTarea.querySelector("#nombreTarea").textContent = tarea["task"];
+            nuevasTareas.appendChild(nuevaTarea);
+        } 
+        else if (tarea["status"] === "ready") {
+            const nuevaTarea = template.cloneNode(true);
+            nuevaTarea.style.display = "flex";
+
+            const nombreTarea = nuevaTarea.querySelector("#nombreTarea");
+            
+            nombreTarea.style.textDecoration = "line-through";
+            nombreTarea.style.opacity = "0.5";
+
+            nuevaTarea.querySelector("#nombreTarea").textContent = tarea["task"];
+            nuevasTareas.appendChild(nuevaTarea);
+        }
     });
 }
+
+function cambiarStatus (){
+    let realizado = document.getElementById("chulito")
+
+}
+
 
 llamadaAPI();
