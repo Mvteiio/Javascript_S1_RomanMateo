@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.roboto-class {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+body {
+    width: 100vw;
+    font-family: "Roboto", sans-serif;
+}
+
+.ficha {
+    width: 70%;
+    border: 1px solid gray;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    
+
+}
+
+.cabezal {
+    border: 1px solid gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: rgb(240, 240, 240);
+}
+
+.dosPrimeros {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3em;
+    margin-right: 0.5em;
+}
+
+.dosSegundos {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3em;
+    margin-right: 0.5em;
+}
+
+.dosTerceros {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3em;
+    margin-right: 0.5em;
+}
+
+#myHeros {
+    font-size: 1.5em;
+    margin-left: 1em ;
+}
+
+#gestion {
+    margin-left: 0.8em;
+    margin-bottom: 0px;
+}
+
+.actorName {
+    margin-left: 10%;
+    width: 30%;
+
+}
+
+.characterName {
+ width: 30%;
+}
+
+.inputStyle {
+    background-color: rgb(202, 215, 227);
+    border: 0.5px solid gray;
+    height: 2.8em;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.actorAge {
+    width: 30%;
+}
+
+.ubication {
+    margin-left: 10%;
+    width: 30%;
+}
+
+.poster {
+    width: 30%;
+}
+
+.date {
+    margin-left: 10%;
+    width: 30%;
+}
+
+.productora {
+    width: 77%;
+    margin-left: 3em;
+}
+
+.production {
+    width: 100%;
+    background-color: rgb(202, 215, 227);
+    border: 0.5px solid gray;
+    height: 2.8em;
+    border-radius: 5px;
+}
+
+.opciones {
+    margin-top: 2em;
+    margin-left: 3em;
+    margin-bottom: 2em;
+}
+
+#newHero {
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+    color: white;
+    height: 3em;
+    width: 10em;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#saveHero {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(44, 44, 236);
+    color: white;
+    height: 3em;
+    width: 10em;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#cancel {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(210, 13, 13);
+    color: white;
+    height: 3em;
+    width: 7em;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#fitRegister {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3em;
+    border: 1px solid black;
+    margin-right: 3em;
+    margin-top: 2em;
+}
+
+#cabezalDos {
+    border-bottom: 1px solid black;
+}
+
+#registerText {
+    margin-bottom: 0.2em;
+    font-size: 1.3em;
+    margin-left: 1em;
+}
+
+#characterFits {
+    margin-top: 0px;
+}
+
+#characterFits {
+    margin-top: 1em;
+    font-size: 1.4em;
+    margin-left: 1em;
+}
