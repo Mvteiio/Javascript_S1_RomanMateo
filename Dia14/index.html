@@ -19,36 +19,39 @@
             <div class="dosPrimeros">
                 <div class="characterName">
                     <h3>Nombre Personaje</h3>
-                    <input type="text" class="inputStyle">
+                    <input type="text" class="inputStyle" id="heroName">
                 </div>
                 <div class="actorName">
                     <h3>Nombre Actor</h3>
-                    <input type="text" class="inputStyle">
+                    <input type="text" class="inputStyle" id="actorName">
                 </div>
             </div>
             <div class="dosSegundos">
                 <div class="actorAge">
                     <h3>Edad Actor</h3>
-                    <input type="text" class="inputStyle">
+                    <input type="text" class="inputStyle" id="actorAge">
                 </div>
                 <div class="ubication">
                     <h3>Ubicación</h3>
-                    <input type="text" class="inputStyle" placeholder="Nombre o ciudad de origen">
+                    <input type="text" class="inputStyle" placeholder="Nombre o ciudad de origen" id="ubication">
                 </div>
             </div>
             <div class="dosTerceros">
                 <div class="poster">
                     <h3>Poster</h3>
-                    <input type="text" class="inputStyle">
+                    <input type="text" class="inputStyle" id="poster">
                 </div>
                 <div class="date">
                     <h3>Fecha</h3>
-                    <input type="text" class="inputStyle">
+                    <input type="date" class="inputStyle" id="date">
                 </div>
             </div>
             <div class="productora">
                 <h3>Productora</h3>
-                <input type="text" class="production">
+                <select id="comic" name="comic">
+                    <option value="marvel">Marvel</option>
+                    <option value="dcomics">DComics</option>
+                </select>
             </div>
         </div>
         
@@ -58,19 +61,26 @@
             </div>
             <div id="description">
                 <h1 id="characterFits">Trajes del personaje</h1>
-                <h3>En esta sección podrá registrar los nombres de los trajes usados por el actor.</h3>
-                <button>+</button>
+                <h3 id="descriptionText">En esta sección podrá registrar los nombres de los trajes usados por el actor.</h3>
+                <button id="botonAgregar">+</button>
             </div>
             <div id="agregadosTrajes">
+                <div id="template">
+                    <h3 id="textFit">Nombre del traje</h3>
+                    <div id="inputBoton">
+                        <input type="text" class="inputFit">
+                        <button class="cancelButton" id="deleteFit">-</button>
+                    </div>
+                </div>
 
             </div>
 
         </div>
 
         <div class="opciones">
-            <button id="newHero">Nuevo Heroe</button>
-            <button id="saveHero">Guardar Heroe</button>
-            <button id="cancel">Cancelar</button>
+            <button id="newHero" onclick="agregarTrajePanel()">Nuevo Heroe</button>
+            <button id="saveHero" onclick="agregarHeroe()">Guardar Heroe</button>
+            <button id="cancel" onclick="cancelar()">Cancelar</button>
         </div>
     </div>
 </body>
