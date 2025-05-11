@@ -1,0 +1,292 @@
+@font-face {
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Regular'), url('../fonts/Poppins-Regular.woff') format('woff');
+    }
+@font-face {
+    font-family: 'Poppins Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Medium'), url('../fonts/Poppins-Medium.woff') format('woff');
+    }
+@font-face {
+    font-family: 'Poppins Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Bold'), url('../fonts/Poppins-Bold.woff') format('woff');
+    }
+
+
+body {
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #F2AC67;
+    font-family: 'Poppins Medium';
+    color: #F8F4E3;
+}
+
+#logoPets {
+    width: 10em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.home {
+    margin-left: 28vw;
+}
+
+.filter {
+    margin-left: 6vw;
+}
+
+.about {
+    margin-left: 6vw;
+}
+
+#welcome {
+    background-color: #F8F4E3;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+}
+
+#welcomeText {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    margin-top: 4em;
+    margin-left: 8em;
+}
+
+.welcomeTitle {
+    font-family: 'Poppins Bold';
+    font-size: 5em;
+    margin-bottom: 0px;
+}
+
+.welcomeDescription {
+    font-family: 'Poppins Regular';
+    font-size: 2em;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.welcomeButton {
+    width: 33%;
+    font-family: 'Poppins Medium';
+    font-size:  1.5em;
+    padding: 14px 0px;
+    background-color: #F2AC67;
+    border: 1px solid black;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.welcomeButton:hover {
+  transform: scale(1.05); /* lo agranda un poco */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* sombra suave */
+}
+
+#welcomeDog {
+    width: 45em;
+    height: 45em;
+    margin-left: 20em;
+    align-self: flex-end;
+    margin-bottom: 0
+}
+
+#principalPets {
+    margin-top: 0px;
+    height: 100vh;
+    text-align: center;
+    margin-top: 1em;
+    font-family: 'Poppins Medium';
+    font-size: 2em;
+}
+
+#template {
+    display: none;
+    flex-direction: column;
+    width: 11em;
+    height: 22em;
+    background-color: #221303;
+    text-align: center;
+    color: #D9D9D9;
+    border-radius: 35px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#template:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.imagenMascota {
+    width: 80%;
+    height: 25%;
+    border: 1px solid black;
+    overflow: hidden;  /* oculta lo que se salga */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-left: 9%;
+    border-radius: 20px;
+}
+
+.imagenMascota img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* clave: recorta y ajusta sin deformar */
+}
+
+#petName {
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 0px;
+}
+
+#petClass {
+    font-family: 'Poppins Regular';
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#petCountry {
+    font-family: 'Poppins Regular';
+    font-size: 0.6em;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#petDescription {
+    font-family: 'Poppins Regular';
+    font-size: 0.6em;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    margin-left: 10vw;
+}
+
+#infoDetallada {
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    height: 75vh;
+    background-color: #221303;
+    color: #D9D9D9;
+    margin-left: 15vw;
+    border-radius: 40px;
+    position: fixed;
+    top: 10%;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+#infoDetallada.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+.imagenMascotaDetailed {
+    width: 50%;
+    height: 30%;
+    border: 1px solid black;
+    overflow: hidden;  /* oculta lo que se salga */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    border-radius: 20px;
+    margin-top: 10%;
+}
+
+.imagenMascotaDetailed img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* clave: recorta y ajusta sin deformar */
+}
+
+#petNameDetailed {
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 0px;
+}
+
+#petClassDetailed {
+    font-family: 'Poppins Regular';
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#petTypeDetailed {
+    font-family: 'Poppins Regular';
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#petCountryDetailed {
+    font-family: 'Poppins Regular';
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#petContactDetailed {
+    font-family: 'Poppins Regular';
+    font-size: 0.6em;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#descriptionBox {
+    width: 50%;
+    text-align: center;
+}
+
+#descriptionDetailed {
+    font-family: 'Poppins Regular';
+    font-size: 0.7em;
+    font-weight: 500;
+    margin-right: 2em;
+    margin-top: 5em;
+}
+

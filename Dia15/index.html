@@ -7,7 +7,56 @@
     <link rel="stylesheet" href="./style/styles.css">
 </head>
 <body>
-    
+    <header>
+        <img src="./storage/pacoPets.png" alt="" id="logoPets">
+        <h1 class="home">Home</h1>
+        <h1 class="filter">Filtrar</h1>
+        <h1 class="about">About Us</h1>
+    </header>
+    <section id="welcome">
+        <div id="welcomeText">
+            <h1 class="welcomeTitle">Adopta una de estas hermosas mascotas!</h1>
+            <h3 class="welcomeDescription">Mira las mascotas abajo.</h3>
+            <button class="welcomeButton" onclick="location.href='#principalPets'">Descubrir</button>
+        </div>
+        <img src="./storage/perroWelcome.png" alt="" id="welcomeDog">
+    </section>
+    <section id="principalPets">
+        <h1>Mascotas más populares</h1>
+        <div id="template">
+            <div class="imagenMascota">
+                <img src="./storage/perro1.jpeg" alt="" id="responseImage">
+            </div>
+            <h1 id="petName">Nombre</h1>
+            <h2 id="petClass">Perro - Cachorro</h2>
+            <h3 id="petCountry">Pais</h3>
+            <h3 id="petDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, facere facilis quas ratione dolorem modi. Ipsam dolorum itaque consequatur id laboriosam.</h3>
+        </div>
+        <div id="container-pets" class="grid-container">
+
+        </div>
+        <div id="infoDetallada">
+            <div class="left">
+                <div class="imagenMascotaDetailed">
+                    <img src="./storage/perro1.jpeg" alt="" id="responseImageDetailed">
+                </div>
+                <h1 id="petNameDetailed">Nombre</h1>
+                <h2 id="petClassDetailed">Perro - Cachorro</h2>
+                <h2 id="petTypeDetailed">Raza</h2>
+                <h2 id="petCountryDetailed">Pais</h2>
+                <h2 id="petContactDetailed">Contacto: </h2>
+            </div>
+            <div id="descriptionBox">
+                <h3 id="descriptionDetailed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum maxime fugit provident aliquam, officia quod totam id quibusdam 
+                    quo praesentium minima odio? Incidunt excepturi accusamus libero quia modi vero totam?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum maxime fugit provident aliquam, officia quod totam id quibusdam 
+                    quo praesentium minima odio? Incidunt excepturi accusamus libero quia modi vero totam?
+                </h3>
+            </div>
+        </div>
+        
+    </section>
 </body>
 <script src="./scripts/script.js"></script>
 </html>
